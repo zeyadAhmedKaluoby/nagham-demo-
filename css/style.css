@@ -1,0 +1,307 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+body
+{
+    font-family: Tahoma , Arial;
+    padding-top: 20px;
+}
+
+.container
+{
+    width: 80% ;
+    margin: auto;
+}
+/**navbar*/
+
+.navbar
+{
+    width: 100%;
+    padding: 5px 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;  
+    background: white;
+    z-index: 9999;
+}
+a.active
+{
+    background: rgb(157, 0, 248);
+    border-radius: 50px;
+}
+.navbar .container  .ul-list .list-item a.active:hover{
+    color: white;
+    }
+
+.navbar input , .navbar label
+{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+
+.navbar .container .logo
+{
+    width: 50%;
+    float: left;
+}
+
+
+.navbar .container .logo .logo-text
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.navbar .container  .ul-list
+{
+    width: 50%;
+    float: right; 
+    list-style: none;
+}
+
+.navbar .container  .ul-list .list-item 
+{   
+    display: inline-block;
+    margin-right: 30px;
+}
+.navbar .container  .ul-list .list-item a 
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+}
+.navbar .container  .ul-list .list-item a:hover{
+color: rgb(157, 0, 248);
+}
+
+
+.navbar input
+{
+    display: none;
+}
+.navbar input:checked ~  .ul-list .list-item{
+    display: block;
+}
+   .navbar input:checked ~  label{
+    background: url('../images/Navbar/close.png') no-repeat;
+    background-size: cover;
+} 
+
+
+.navbar label
+{
+    display: none;
+    width: 15px;
+    height: 15px;
+    background: url('../images/Navbar//open.png') no-repeat;
+    padding: 10px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+    
+
+
+@media (max-width:920px)
+{
+    .navbar .container .logo
+    {
+    width: 100%;
+    float: none;
+    }
+
+    .navbar .container .ul-list 
+    {
+    width: 100%;
+    float: none;
+    }
+    
+    .navbar .container  .ul-list .list-item 
+{   
+    display:none;
+    text-align: center;
+    
+}
+.navbar label
+    {
+        display: block;
+    }
+
+}
+/***home*/
+.home
+{
+    height: 755px;
+    width: 100%;
+    background: url('../images/Home/nagham.png') ;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.home .home-information
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.home .home-information .home-title
+{
+    font-size: 60px;
+    color: rgb(157, 0, 248);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px black;
+}
+.home .home-information .home-info
+{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+.home .home-information .home-desc
+{
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 20px;
+}
+ .btn
+{
+    background: rgb(157, 0, 248);
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+    border: 0;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+
+}
+
+
+.btn:hover{
+    color: rgb(157, 0, 248);
+    background: #fff;
+}
+.btnClos
+{
+    background: rgb(157, 0, 248)#fff;
+    color: rgb(157, 0, 248);
+    font-size: 18px;
+    width: 150px;
+    border: 0;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: none;
+    display: none;
+}
+
+
+.btnClos:hover{
+    color: white;
+    background: rgb(157, 0, 248);
+}
+
+
+@media(max-width:576px)
+{
+    .home .home-information .home-title
+    {
+        margin-top: 90px;
+        font-size: 20px;
+        
+    }
+    .btn
+    {
+        margin-bottom: 50px;
+    }
+}
+
+
+.signUp
+{
+    width: 250px;
+    height: auto;
+    display: none;
+    text-align: center;
+    border: 2px solid rgb(157, 0, 248) ;
+    margin: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    
+}
+
+.signUp form input{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid rgb(157, 0, 248) ;
+    padding: 10px;
+}
+.signUp form .btn{
+    margin-top: 20px;
+}
+
+.signUp .btn.closeS
+{
+    color: white;
+    background: rgba(184, 56, 56, 0.644);
+}
+.login
+{
+    width: 250px;
+    height: auto;
+    display: none;
+    text-align: center;
+    border: 2px solid rgb(157, 0, 248) ;
+    margin: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    
+}
+
+.login form input{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid rgb(157, 0, 248) ;
+    padding: 10px;
+}
+.login form .btn{
+    margin-top: 20px;
+}
+
+.login .btn.closeS
+{
+    color: white;
+    background: rgba(184, 56, 56, 0.644);
+}
+.login a
+{
+    cursor: pointer;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
